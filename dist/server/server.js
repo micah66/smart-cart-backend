@@ -7,7 +7,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const env = require('dotenv').config();
 const shopping_list_routes_1 = __importDefault(require("../routes/shopping-list-routes"));
-const port = process.env.port || 5000;
+const port = process.env.PORT || 5000;
 const app = (0, express_1.default)();
 app.get('/', (req, res) => {
     res.send('Hello World!');
